@@ -62,7 +62,7 @@ The program needs to calculate the following parameters,
 The solution options are
 
 1. Code the solution using equations/algorithms to directly produce the values based on the inputs.
-2. Code the solution using machine learning approaches to predict the values based on models - in this case supervised learning models and classifiers.
+2. Code the solution using machine learning approaches to predict the values based on models - in this case i think supervised learning models and classifiers.
 
 I do not have a background in machine learning and after spending some time researching options like WEKA and Spark decided that this was not a viable approach for me within the time constraints, so I have used option 1.
 
@@ -77,10 +77,10 @@ http://www-das.uwyo.edu/~geerts/cwx/notes/chap16/geo_clim.html
 
 Calculated from the elevation of the location and the temperature according to the barometric formula described in https://en.wikipedia.org/wiki/Atmospheric_pressure
 
-####Humidity
+#### Humidity
 
 Naive humidity calculation with random dew point based on https://en.wikipedia.org/wiki/Dew_point
 
-####Conditions
+#### Conditions
 
 Extremely simple hard coded heuristics to determine weather condition from temperature, humidity and air pressure
