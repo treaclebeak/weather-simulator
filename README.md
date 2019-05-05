@@ -1,6 +1,6 @@
 ## Weather Simulator
 
-#### Run
+## Run
 
 ##### Prerequisite
 
@@ -12,12 +12,12 @@ Use the precompiled jar in the `bin` folder othwerwise build the application fro
 
 `mvn clean package`
 
-#####Program options
+##### Program options
 
 1. Mandatory: The name of a file  containing city data. Use `cities.csv` (a dataset of ~10K cities) or `selected_cities.csv` (smaller dataset selected cities)
 2. Optional: An integer n that will add n months to the current date. By default the calculations use the current date.
 
-#####Execute the jar file with java 
+##### Execute the jar file with java 
 
 If using the precompiled jar file  
 
@@ -27,7 +27,7 @@ if building from source
 
 `java -jar target/weather-1.0-SNAPSHOT.jar <file name>`
 
-## The Problem
+## The Problem Space
 
 A toy simulation of the environment (taking into account things like atmosphere, topography, geography, oceanography, or similar) that evolves over time. 
 The program outputs data for 10 random cities in the following sample format
