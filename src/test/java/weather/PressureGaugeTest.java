@@ -7,25 +7,25 @@ import static org.junit.Assert.assertThat;
 public class PressureGaugeTest {
 
     @Test
-    public void higherAltitudeShouldCreateHigherPressure() {
-        final double seaLevel = 0;
-        final double elevation = 3000;
-        final double temperature = 15.0;
+    public void higherAltitudeShouldHaveLowerPressure() {
+        double seaLevel = 0;
+        double elevation = 3000;
+        double temperature = 15.0;
 
-        final double pressureAtSea = PressureGauge.calculate(seaLevel, temperature);
-        final double pressureOnMountain = PressureGauge.calculate(elevation, temperature);
+        double pressureAtSeaLevel = PressureGauge.calculate(seaLevel, temperature);
+        double pressureAboveSeaLevel = PressureGauge.calculate(elevation, temperature);
 
-        assertThat(pressureAtSea, greaterThan(pressureOnMountain));
+        assertThat(pressureAtSeaLevel, greaterThan(pressureAboveSeaLevel));
     }
 
     @Test
     public void lowerTemperatureShouldCreateHigherPressure() {
-        final double constantElevation = 10;
-        final double coldTemperature = 10.0;
-        final double hotTemperature = 30.0;
+        double constantElevation = 10;
+        double coldTemperature = 10.0;
+        double hotTemperature = 30.0;
 
-        final double pressureCold = PressureGauge.calculate(constantElevation, coldTemperature);
-        final double pressureHot = PressureGauge.calculate(constantElevation, hotTemperature);
+        double pressureCold = PressureGauge.calculate(constantElevation, coldTemperature);
+        double pressureHot = PressureGauge.calculate(constantElevation, hotTemperature);
 
         assertThat(pressureCold, greaterThan(pressureHot));
 
