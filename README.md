@@ -1,4 +1,4 @@
-## Weather Simulator
+# Weather Simulator
 
 ## Run
 
