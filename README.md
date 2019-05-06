@@ -8,7 +8,7 @@
 
 ##### The jar file
 
-Use the precompiled jar in the `bin` folder othwerwise build the application from source with maven
+Use the precompiled jar in the `bin` folder otherwise build the application from source with maven
 
 `mvn clean package`
 
